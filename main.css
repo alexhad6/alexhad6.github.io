@@ -1,21 +1,22 @@
 * {
 	margin: 0;
 	padding: 0;
+	color: #444;
 }
 
 body {
 	background-color: #B5D1F2;
 	font-family:"Oxygen", Helvetica, Arial, Sans-serif;
 	text-align: center;
-	color: #444;
+	width: 75%;
+	margin: auto;
 }
 
 a {
 	text-decoration: none;
-	color: #444;
 }
 
-a:hover, a:active {
+a:hover {
 	color: #000;
 }
 
@@ -50,15 +51,14 @@ a:hover, a:active {
 	margin-bottom: 35px;
 }
 
-.content img {
-	width: 75%;
+img {
+	width: 100%;
 }
 
 .footer {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .footer p {
 	font-size: 15px;
-	margin-bottom: 10px;
 }
