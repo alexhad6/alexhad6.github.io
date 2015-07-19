@@ -48,7 +48,11 @@ a:hover {
 
 .content {
 	margin-top: 45px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
+}
+
+.content .container {
+	margin-bottom: 25px;
 }
 
 img {
@@ -56,7 +60,9 @@ img {
 }
 
 .caption {
-	font-size
+	font-size: 15px;
+	font-style: italic;
+	text-align: left;
 }
 
 .footer {
