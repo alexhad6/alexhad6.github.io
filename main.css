@@ -21,7 +21,7 @@ a:hover {
 }
 
 .header {
-	margin: 30px 0 20px;
+	margin: 35px 0 20px;
 }
 
 .header h1 {
@@ -31,16 +31,21 @@ a:hover {
 	font-size: 60px;
 }
 
+.menu {
+	display: none;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 10px 0 -10px;
+}
+
 .nav {
 	display: inline-block;
 	width: 500px;
-	margin-bottom: 25px;
 }
 
 .nav li {
-	display: inline;
-	margin-left: 25px;
-	margin-right: 25px;
+	display: inline-block;
+	margin: 0 25px 15px;
 	font-weight: 400;
 	font-size: 20px;
 }
@@ -51,12 +56,12 @@ a:hover {
 }
 
 .content {
-	margin-top: 30px;
+	margin-top: 35px;
 	margin-bottom: 30px;
 }
 
 .container {
-	margin-bottom: 3vw;
+	margin-bottom: 20px;
 }
 
 img {
@@ -64,7 +69,7 @@ img {
 }
 
 .caption {
-	font-size: 14px;
+	font-size: 15px;
 	font-style: italic;
 	text-align: left;
 }
@@ -88,10 +93,6 @@ img {
 		width: 100%;
 	}
 
-	.caption {
-		font-size: 15px;
-	}
-
 	.row2 .container {
 		width: 49%;
 		float: left;
@@ -110,5 +111,8 @@ img {
 @media screen and (max-width: 640px) {
 	.nav {
 		display: none;
+	}
+	.menu {
+		display: block;
 	}
 }
