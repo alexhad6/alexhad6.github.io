@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	color: #444;
+	font-weight: 400;
 }
 
 body {
@@ -20,6 +21,34 @@ a:hover {
 	color: #000;
 }
 
+.menu {
+	display: none;
+}
+
+label[for="menu"] {
+	cursor: pointer;
+	font-size: 20px;
+	display: none;
+}
+
+.mobile-nav {
+	display:none;
+}
+
+.mobile-nav li {
+	list-style: none;
+	margin: 0 25px 15px;
+	font-size: 20px;
+}
+
+.site {
+
+}
+
+.menu:checked + .mobile-nav {
+	display: block;
+}
+
 .header {
 	margin: 35px 0 20px;
 }
@@ -31,13 +60,6 @@ a:hover {
 	font-size: 60px;
 }
 
-.menu {
-	display: none;
-	font-weight: 400;
-	font-size: 20px;
-	margin: 10px 0 -10px;
-}
-
 .nav {
 	display: inline-block;
 	width: 500px;
@@ -46,11 +68,10 @@ a:hover {
 .nav li {
 	display: inline-block;
 	margin: 0 25px 15px;
-	font-weight: 400;
 	font-size: 20px;
 }
 
-.nav .selected {
+.selected {
 	font-weight: 700;
 	color: #000;
 }
@@ -112,7 +133,9 @@ img {
 	.nav {
 		display: none;
 	}
-	.menu {
+
+	label[for="menu"] {
 		display: block;
 	}
+
 }
