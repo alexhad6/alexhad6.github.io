@@ -6,9 +6,9 @@
 }
 
 body {
-	position: relative;
 	background-color: #B5D1F2;
 	font-family:"Oxygen", Helvetica, Arial, Sans-serif;
+	position: relative;
 	text-align: center;
 	width: 90%;
 	margin: auto;
@@ -29,7 +29,12 @@ a:hover {
 label[for="menu"] {
 	cursor: pointer;
 	font-size: 20px;
+	margin: 10px 0 -10px;
 	display: none;
+}
+
+label[for="menu"]:hover {
+	color: #000;
 }
 
 .mobile-nav {
@@ -46,14 +51,13 @@ label[for="menu"] {
 .site {
 	position: relative;
 	background-color: #B5D1F2;
+	-webkit-transition: top .5s;
+	transition: top .5s;
 	top: 0;
-	z-index: 1;
-	-webkit-transition: top 2s;
-	transition: top 2s;
 }
 
 .menu:checked ~ .site {
-	top: 290px;
+	top: 295px;
 }
 
 .header {
@@ -84,7 +88,7 @@ label[for="menu"] {
 }
 
 .content {
-	margin-top: 35px;
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
@@ -100,10 +104,6 @@ img {
 	font-size: 15px;
 	font-style: italic;
 	text-align: left;
-}
-
-.row {
-	width:100%;
 }
 
 .footer {
@@ -131,7 +131,7 @@ img {
 		float: left;
 	}
 
-	.row3 .container:not(:last-child), .row2 .container:not(:last-child){
+	.row3, .container:not(:last-child), .row2 .container:not(:last-child){
 		margin-right: 2%;
 	}
 }
@@ -144,5 +144,4 @@ img {
 	label[for="menu"] {
 		display: block;
 	}
-
 }
