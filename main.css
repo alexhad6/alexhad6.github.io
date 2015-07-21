@@ -6,6 +6,7 @@
 }
 
 body {
+	position: relative;
 	background-color: #B5D1F2;
 	font-family:"Oxygen", Helvetica, Arial, Sans-serif;
 	text-align: center;
@@ -32,7 +33,8 @@ label[for="menu"] {
 }
 
 .mobile-nav {
-	display:none;
+	position: absolute;
+	width: 100%;
 }
 
 .mobile-nav li {
@@ -42,11 +44,16 @@ label[for="menu"] {
 }
 
 .site {
-
+	position: relative;
+	background-color: #B5D1F2;
+	top: 0;
+	z-index: 1;
+	-webkit-transition: top 2s;
+	transition: top 2s;
 }
 
-.menu:checked + .mobile-nav {
-	display: block;
+.menu:checked ~ .site {
+	top: 290px;
 }
 
 .header {
