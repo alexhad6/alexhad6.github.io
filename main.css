@@ -67,7 +67,7 @@ nav .active {
 	color: #000;
 }
 footer {
-	margin-bottom: 2.5rem;
+	padding-bottom: 2.5rem;
 	font-size: 1rem;
 }
 @media only screen and (min-width: 641px) {
