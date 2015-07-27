@@ -4,144 +4,80 @@
 	color: #444;
 	font-weight: 400;
 }
-
 body {
-	background-color: #B5D1F2;
-	font-family:"Oxygen", Helvetica, Arial, Sans-serif;
 	position: relative;
-	text-align: center;
-	width: 90%;
+	width: 75%;
 	margin: auto;
+	text-align: center;
+	background-color: #B5D1F2;
+	font-family: "Oxygen", Helvetica, Sans-serif;
 }
-
 a {
 	text-decoration: none;
 }
-
 a:hover {
 	color: #000;
 }
-
-.menu {
+#menu {
 	display: none;
 }
-
-label[for="menu"] {
-	cursor: pointer;
-	font-size: 20px;
-	margin: 10px 0 -10px;
-	display: none;
-}
-
-label[for="menu"]:hover {
-	color: #000;
-}
-
-.mobile-nav {
+nav.mobile {
 	position: absolute;
 	width: 100%;
 }
-
-.mobile-nav li {
-	list-style: none;
-	margin: 0 25px 15px;
-	font-size: 20px;
+label[for="menu"] {
+	display: block;
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
 }
-
-.site {
+label[for="menu"]:hover {
+	cursor: pointer;
+	color: #000;
+}
+.canvas {
 	position: relative;
 	background-color: #B5D1F2;
-	-webkit-transition: top .5s;
 	transition: top .5s;
 	top: 0;
 }
-
-.menu:checked ~ .site {
-	top: 295px;
+#menu:checked ~ .canvas {
+	top: 15rem;
 }
-
-.header {
-	margin: 35px 0 20px;
+header {
+	margin: 2rem 0 1rem;
 }
-
-.header h1 {
-	font-family:"Julius Sans One", Helvetica, Sans-serif;
+header h1 {
+	font-family: "Julius Sans One", Helvetica, Sans-serif;
 	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 60px;
+	font-size: 3.75rem;
 }
-
-.nav {
+nav.desktop {
+	display: none;
+}
+nav a {
 	display: inline-block;
-	width: 500px;
+	margin: 0 1.5rem 1rem;
+	font-size: 1.25rem;
 }
-
-.nav li {
-	display: inline-block;
-	margin: 0 25px 15px;
-	font-size: 20px;
+nav.mobile a {
+	display: block;
 }
-
-.selected {
+nav .active {
 	font-weight: 700;
 	color: #000;
 }
-
-.content {
-	margin-top: 30px;
-	margin-bottom: 30px;
+footer {
+	margin-bottom: 2.5rem;
+	font-size: 1rem;
 }
-
-.container {
-	margin-bottom: 20px;
-}
-
-img {
-	width: 100%;
-}
-
-.caption {
-	font-size: 15px;
-	font-style: italic;
-	text-align: left;
-}
-
-.footer {
-	margin-bottom: 40px;
-	font-size: 15px;
-}
-
-@media screen and (min-width: 900px) {
-	body {
-		width: 75%;
-		min-width: 810px;
-	}
-
-	.nav {
-		width: 100%;
-	}
-
-	.row2 .container {
-		width: 49%;
-		float: left;
-	}
-
-	.row3 .container {
-		width: 32%;
-		float: left;
-	}
-
-	.row3, .container:not(:last-child), .row2 .container:not(:last-child){
-		margin-right: 2%;
-	}
-}
-
-@media screen and (max-width: 640px) {
-	.nav {
+@media only screen and (min-width: 641px) {
+	label[for="menu"] {
 		display: none;
 	}
-
-	label[for="menu"] {
-		display: block;
+	nav.desktop {
+		display: inherit;
 	}
+}
+@media only screen and (min-width: 901px) {
+
 }
