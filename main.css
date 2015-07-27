@@ -41,7 +41,7 @@ label[for="menu"]:hover {
 	top: 0;
 }
 #menu:checked ~ .canvas {
-	top: 15rem;
+	top: 18.5rem;
 }
 header {
 	margin: 2rem 0 1rem;
