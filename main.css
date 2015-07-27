@@ -6,7 +6,7 @@
 }
 body {
 	position: relative;
-	width: 75%;
+	width: 90%;
 	margin: auto;
 	text-align: center;
 	background-color: #B5D1F2;
@@ -66,6 +66,21 @@ nav .active {
 	font-weight: 700;
 	color: #000;
 }
+main {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.container {
+	margin-bottom: 1.25rem;
+}
+img {
+	width: 100%;
+}
+.caption {
+	font-size: 1rem;
+	font-style: italic;
+	text-align: left;
+}
 footer {
 	padding-bottom: 2.5rem;
 	font-size: 1rem;
@@ -85,5 +100,8 @@ footer {
 	}
 }
 @media only screen and (min-width: 901px) {
-
+	body {
+		width: 75%;
+		min-width: 810px;
+	}
 }
