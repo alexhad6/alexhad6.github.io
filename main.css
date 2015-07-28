@@ -5,9 +5,10 @@
 	font-weight: 400;
 }
 html {
-	-webkit-text-size-adjust: 100%;
+	
 }
 body {
+	-webkit-text-size-adjust: 100%;
 	position: relative;
 	width: 90%;
 	margin: auto;
@@ -79,13 +80,13 @@ main {
 img {
 	width: 100%;
 }
-p.caption {
+.caption {
 	font-size: 1rem;
 	font-style: italic;
 	text-align: left;
 }
-footer p {
-	padding-bottom: 2.5rem;
+footer {
+	margin-bottom: 2.5rem;
 	font-size: 1rem;
 }
 @media only screen and (min-width: 641px) {
