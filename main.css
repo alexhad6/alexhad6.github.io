@@ -54,7 +54,7 @@ header h1 {
 }
 nav.desktop {
 	display: none;
-	width: 500px;
+	width: 26rem;
 }
 nav a {
 	display: inline-block;
@@ -69,7 +69,7 @@ nav .active {
 	color: #000;
 }
 main {
-	margin: 2rem 0 1.5rem;
+	margin: 1.75rem 0 1.5rem;
 }
 .container {
 	margin-bottom: 1.25rem;
@@ -86,7 +86,7 @@ footer {
 	padding-bottom: 1.25rem;
 	font-size: 1rem;
 }
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 40.0625em) {
 	label[for="menu"] {
 		display: none;
 	}
@@ -100,10 +100,10 @@ footer {
 		top: 0;
 	}
 }
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 56.3125em) {
 	body {
 		width: 75%;
-		min-width: 810px;
+		min-width: 50.625rem;
 	}
 	nav.desktop {
 		width: 100%;
