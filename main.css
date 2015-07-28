@@ -4,6 +4,9 @@
 	color: #444;
 	font-weight: 400;
 }
+html {
+	-webkit-text-size-adjust: 100%;
+}
 body {
 	position: relative;
 	width: 90%;
