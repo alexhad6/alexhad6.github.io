@@ -8,7 +8,7 @@ html {
 	
 }
 body {
-	
+	-webkit-text-size-adjust: 100%;
 	position: relative;
 	width: 90%;
 	margin: auto;
