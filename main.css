@@ -28,7 +28,7 @@ nav.mobile {
 label[for="menu"] {
 	display: block;
 	font-size: 1.25rem;
-	margin-top: 0.625rem;
+	padding-top: 0.625rem;
 }
 label[for="menu"]:hover {
 	cursor: pointer;
