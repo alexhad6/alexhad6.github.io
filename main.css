@@ -76,12 +76,12 @@ main {
 img {
 	width: 100%;
 }
-.caption {
+p.caption {
 	font-size: 1rem;
 	font-style: italic;
 	text-align: left;
 }
-footer {
+footer p {
 	padding-bottom: 2.5rem;
 	font-size: 1rem;
 }
