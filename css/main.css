@@ -78,13 +78,13 @@ img {
 	width: 100%;
 }
 .caption {
-	font-size: 1rem;
+	font-size: .9375rem;
 	font-style: italic;
 	text-align: left;
 }
 footer {
 	padding-bottom: 1.25rem;
-	font-size: 1rem;
+	font-size: .9375rem;
 }
 @media only screen and (min-width: 40.0625em) {
 	label[for="menu"] {
@@ -107,5 +107,16 @@ footer {
 	}
 	nav.desktop {
 		width: 100%;
+	}
+	.row2 .container {
+		width: 49%;
+		float: left;
+	}
+	.row3 .container {
+		width: 32%;
+		float: left;
+	}
+	.row3 .container:not(:last-child), .row2 .container:not(:last-child){
+		margin-right: 2%;
 	}
 }
