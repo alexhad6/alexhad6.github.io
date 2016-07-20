@@ -15,8 +15,6 @@ body {
 canvas {
 	margin: auto;
 	background: #222;
-	width: 31.25rem;
-	height: 31.25rem;;
 }
 
 header {
