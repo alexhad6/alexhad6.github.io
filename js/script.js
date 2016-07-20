@@ -46,7 +46,7 @@ function Circle(x, y, r){
 	this.s=1.5;
 
 	this.display=function(){
-		ctx.fillStyle="yellow";
+		ctx.fillStyle="#ddd";
 		ctx.beginPath();
 		ctx.arc(this.x,this.y,this.r,0,2*Math.PI);
 		ctx.fill();
