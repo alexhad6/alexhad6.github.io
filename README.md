@@ -1,2 +1,2 @@
-## games.alexhadley.net (alexhad6.github.io)
-This is my photo portfolio.
+## alexhad6.github.io
+Photo portfolio testing photo grid generator code.
