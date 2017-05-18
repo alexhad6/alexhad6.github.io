@@ -29,5 +29,5 @@ function updateColumns(nCol) {
 		nColumns = nCol;
 	}
 }
-
-$(window).load(updateMain).resize(updateMain);
+$(document).ready(updateMain);
+$(window).resize(updateMain);
