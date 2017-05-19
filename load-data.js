@@ -13,8 +13,8 @@ let images = [
 	{ src: 'img/washington_square_arch.jpg', width: 3024, height: 3779, object: new Image(), date: 1456614904 }
 ];
 
+images.sort(function(img1, img2) { return img2.date - img1.date });
+
 for (let image of images) {
 	image.object.src = image.src;
 }
-
-images.sort(function(img1, img2) { return img2.date - img1.date });
