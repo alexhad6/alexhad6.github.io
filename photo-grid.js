@@ -25,8 +25,7 @@ function updateColumns(nCol, first) {
 			columns[0].height += image.height/image.width;
 			if (first) {
 				$('#img'+i).hide();
-				images[i].object.src = images[i].src;
-				images[i].object.onload = function() { $('#img'+i).show(); };
+				image.object.onload = function() { $('#img'+i).show(); };
 			}
 		}
 
