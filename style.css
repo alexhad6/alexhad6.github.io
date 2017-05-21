@@ -32,9 +32,14 @@ header p {
 	margin: 0 1.5rem;
 }
 
-main {
+#grid {
 	display: flex;
 	justify-content: space-between;
+}
+
+#active {
+	width: 50%;
+	margin: auto;
 }
 
 .column {
@@ -47,3 +52,4 @@ main {
 	width: 100%;
 	margin-bottom: .4rem;
 }
+

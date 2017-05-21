@@ -1,36 +1,47 @@
 let nColumns = 0;
 
-function updateMain(first) {
-	let nCol = 0;
-	if ($(window).width() < 640) { nCol = 1; }
-	else if ($(window).width() < 1000) { nCol = 2; }
-	else { nCol = 3; }
-	updateColumns(nCol, first);
+function updateMain() {
+	let width = $(window).width();
+	updateColumns(width < 640 ? 1 : width < 1000 ? 2 : 3);
 }
 
-function updateColumns(nCol, first) {
+function updateColumns(nCol) {
 	if (nColumns !== nCol) {
 		const columns = [];
-		$('main').empty();
+		$('#grid').empty();
 
 		for (let i = 0; i < nCol; i++) {
-			$('main').append('<div class="column" id="col'+i+'"></div>');
-			columns.push({id: 'col'+i, height: 0});
+			let object = $('<div class="column"></div>')
+			$('#grid').append(object);
+			columns.push({object: object, height: 0});
 		}
 
 		for(let i = 0; i < images.length; i++) {
-			let image = images[i];
+			const { src, width, height, object } = images[i];
+			const img = $('<div class="container"><img src="'+src+'"></div>');
+
 			columns.sort(function(c1, c2) { return c1.height - c2.height; });
-			$('#'+columns[0].id).append('<div class="container" id="img'+i+'"><a href="'+image.src+'"><img src="'+image.src+'"></a></div>');
-			columns[0].height += image.height/image.width;
-			if (first) {
-				$('#img'+i).hide();
-				image.object.onload = function() { $('#img'+i).show(); };
+			img.appendTo(columns[0].object);
+			columns[0].height += height/width;
+
+			img.click(function() {
+				$('#grid').hide();
+				img.clone().appendTo('#active').click(function() {
+					$('#active').empty();
+					$('#grid').show();
+				});
+			});
+			
+			if (nColumns === 0) {
+				img.hide();
+				object.onload = function() { img.show(); }
+				$('#active').empty();
 			}
 		}
 
 		nColumns = nCol;
 	}
 }
-$(document).ready(function() { updateMain(true); });
-$(window).resize(function() { updateMain(false); });
+
+$(document).ready(updateMain);
+$(window).resize(updateMain);
