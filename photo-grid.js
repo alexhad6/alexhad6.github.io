@@ -17,16 +17,16 @@ function updateColumns(nCol) {
 		}
 
 		for(let i = 0; i < images.length; i++) {
-			const { src, width, height, filename, object } = images[i];
+			const {src, width, height, filename, object} = images[i];
 			const img = $('<img src="'+src+'">');
 
-			columns.sort(function(c1, c2) { return c1.height - c2.height; });
+			columns.sort((c1, c2) => c1.height - c2.height);
 			img.appendTo(columns[0].object);
 			columns[0].height += height/width;
 
 			img.click(function() {
 				img.clone().appendTo('#active');
-				$('#active').show().click(function() {
+				$('#active').show().click(() => {
 					$('#active').empty().hide();
 					$('body').css('overflow', 'scroll');
 				});;
@@ -35,7 +35,7 @@ function updateColumns(nCol) {
 			
 			if (nColumns === 0) {
 				img.hide();
-				object.onload = function() { img.show(); }
+				object.onload = () => img.show();
 				$('#active').empty().hide();
 			}
 		}
@@ -44,5 +44,5 @@ function updateColumns(nCol) {
 	}
 }
 
-$(document).ready(updateMain);
+$(updateMain);
 $(window).resize(updateMain);

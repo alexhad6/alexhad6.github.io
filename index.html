@@ -11,17 +11,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="load-data.js"></script>
 	<script src="photo-grid.js"></script>
+	<script>
+		$(() => $('footer p').html('Copyright &copy; ' + (new Date).getFullYear() + ' Alex Hadley'));
+	</script>
 </head>
 <body>
 	<header>
-		<div class="site-name">
-			<h1>Alex Hadley</h1>
-		</div>
-		<nav>
-			<p>Featured</p>
-			<p>Sky</p>
-			<p>Contact</p>
-		</nav>
+		<h1>Alex Hadley Photos</h1>
 	</header>
 	<main>
 		<div id="grid">
@@ -32,7 +28,7 @@
 		</div>
 	</main>
 	<footer>
-		<p>Copyright &copy; 2017 Alex Hadley</p>
+		<p>Copyright &copy; 2020 Alex Hadley</p>
 	</footer>
 </body>
 </html>

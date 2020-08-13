@@ -7,29 +7,8 @@ body {
 
 header {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	justify-content: space-between;
-}
-
-header .site-name {
-	display: flex;
-	align-items: baseline;
-}
-
-header .site-name h1 {
-	margin-right: 1rem;
-}
-
-header .site-name h2 {
-	color: #4A63B0;
-}
-
-header nav {
-	display: flex;
-}
-
-header p {
-	margin: 0 1.5rem;
 }
 
 #grid {
@@ -68,4 +47,10 @@ header p {
 .column {
 	flex: 1;
 	margin: .2rem;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
